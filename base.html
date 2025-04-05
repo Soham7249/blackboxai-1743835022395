@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-roboto">
+  <!-- Header with Navigation -->
+  <header class="bg-indigo-700 text-white p-4 sticky top-0 z-50 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="font-bold text-2xl hover:text-indigo-200 transition">Dr. Smith</a>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:underline hover:text-indigo-200 transition">Home</a></li>
+        <li><a href="courses.html" class="hover:underline hover:text-indigo-200 transition">Courses</a></li>
+        <li><a href="testimonials.html" class="hover:underline hover:text-indigo-200 transition">Testimonials</a></li>
+        <li><a href="contact.html" class="hover:underline hover:text-indigo-200 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content Placeholder -->
+  <main class="min-h-screen">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-6 mt-10">
+    <div class="container mx-auto">
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#" class="text-2xl hover:text-indigo-300 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-2xl hover:text-indigo-300 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-2xl hover:text-indigo-300 transition"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2024 Dr. Smith. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
