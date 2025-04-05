@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Dr. Smith</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-roboto">
+  <!-- Header with Navigation -->
+  <header class="bg-indigo-700 text-white p-4 sticky top-0 z-50 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="font-bold text-2xl hover:text-indigo-200 transition">Dr. Smith</a>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:underline hover:text-indigo-200 transition">Home</a></li>
+        <li><a href="courses.html" class="hover:underline hover:text-indigo-200 transition font-semibold">Courses</a></li>
+        <li><a href="testimonials.html" class="hover:underline hover:text-indigo-200 transition">Testimonials</a></li>
+        <li><a href="contact.html" class="hover:underline hover:text-indigo-200 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Courses Header -->
+  <section class="bg-cover bg-center py-32" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg')">
+    <div class="container mx-auto text-white px-6 text-center">
+      <h1 class="text-5xl font-bold mb-4">Course Catalog</h1>
+      <p class="text-xl">Explore our comprehensive curriculum designed to challenge and inspire</p>
+    </div>
+  </section>
+
+  <!-- Main Courses Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Course 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-l-4 border-indigo-600">
+          <div class="flex items-start mb-4">
+            <div class="text-indigo-600 text-3xl mr-4">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold">Advanced Mathematics</h2>
+              <p class="text-gray-500">MATH 401 - Fall Semester</p>
+            </div>
+          </div>
+          <p class="mb-4">This course covers advanced topics in calculus, linear algebra, and differential equations with applications in physics and engineering.</p>
+          <div class="mb-4">
+            <h3 class="font-semibold mb-2">Course Topics:</h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Multivariable Calculus</li>
+              <li>Linear Transformations</li>
+              <li>Partial Differential Equations</li>
+              <li>Numerical Methods</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Prerequisites:</h3>
+            <p class="text-gray-600">MATH 301 or equivalent</p>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-l-4 border-indigo-600">
+          <div class="flex items-start mb-4">
+            <div class="text-indigo-600 text-3xl mr-4">
+              <i class="fas fa-atom"></i>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold">Physics Fundamentals</h2>
+              <p class="text-gray-500">PHYS 301 - Spring Semester</p>
+            </div>
+          </div>
+          <p class="mb-4">A comprehensive study of classical mechanics, thermodynamics, and electromagnetism with laboratory components.</p>
+          <div class="mb-4">
+            <h3 class="font-semibold mb-2">Course Topics:</h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Newtonian Mechanics</li>
+              <li>Thermodynamic Laws</li>
+              <li>Maxwell's Equations</li>
+              <li>Wave Phenomena</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Prerequisites:</h3>
+            <p class="text-gray-600">PHYS 201 and MATH 202</p>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-l-4 border-indigo-600">
+          <div class="flex items-start mb-4">
+            <div class="text-indigo-600 text-3xl mr-4">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold">Computer Science Principles</h2>
+              <p class="text-gray-500">CS 201 - Fall/Spring Semesters</p>
+            </div>
+          </div>
+          <p class="mb-4">Introduction to computational thinking, algorithms, and programming using Python with applications in data analysis.</p>
+          <div class="mb-4">
+            <h3 class="font-semibold mb-2">Course Topics:</h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Algorithm Design</li>
+              <li>Data Structures</li>
+              <li>Object-Oriented Programming</li>
+              <li>Basic Data Analysis</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Prerequisites:</h3>
+            <p class="text-gray-600">None</p>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-l-4 border-indigo-600">
+          <div class="flex items-start mb-4">
+            <div class="text-indigo-600 text-3xl mr-4">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold">Cognitive Science</h2>
+              <p class="text-gray-500">COGS 350 - Spring Semester</p>
+            </div>
+          </div>
+          <p class="mb-4">Interdisciplinary exploration of the mind and intelligence, incorporating psychology, neuroscience, and artificial intelligence.</p>
+          <div class="mb-4">
+            <h3 class="font-semibold mb-2">Course Topics:</h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Neural Networks</li>
+              <li>Language Processing</li>
+              <li>Decision Making</li>
+              <li>Consciousness Studies</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Prerequisites:</h3>
+            <p class="text-gray-600">PSYCH 101 or CS 201</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-6">
+    <div class="container mx-auto">
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#" class="text-2xl hover:text-indigo-300 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-2xl hover:text-indigo-300 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-2xl hover:text-indigo-300 transition"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2024 Dr. Smith. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
