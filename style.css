@@ -1,0 +1,83 @@
+/* Custom Font Faces */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2') format('woff2');
+}
+
+/* Base Styles */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Custom Components */
+.btn-indigo {
+  @apply bg-indigo-600 text-white px-6 py-3 rounded-lg transition duration-300;
+}
+
+.btn-indigo:hover {
+  @apply bg-indigo-700 shadow-md;
+}
+
+/* Form Input Styles */
+.input-field {
+  @apply w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-300;
+}
+
+.input-field:focus {
+  @apply shadow-md;
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+  @apply bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Course Card Styles */
+.course-card {
+  @apply bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-l-4 border-indigo-600;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  header, footer, .no-print {
+    display: none;
+  }
+  
+  body {
+    padding: 0;
+    font-size: 12pt;
+    color: #000;
+  }
+}
